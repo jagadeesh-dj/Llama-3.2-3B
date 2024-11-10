@@ -9,7 +9,7 @@ load_dotenv()
 
 HuggingFace_api=os.getenv('HuggingFace_Api_Token')
 def api(role,content):
-	client = InferenceClient(api_key=HuggingFace_api)
+	client = InferenceClient(api_key="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")
 	messages = [
 		{
 			"role": role,

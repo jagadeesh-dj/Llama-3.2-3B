@@ -2,7 +2,10 @@ import streamlit as st
 import random
 import time
 from huggingface_hub import InferenceClient
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  
 
 HuggingFace_api=os.getenv('HuggingFace_Api_Token')
 def api(role,content):

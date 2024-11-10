@@ -42,7 +42,7 @@ def api(role,content):
 #         time.sleep(0.05)
 
 
-st.title("Simple chat")
+st.title("Llama-3.2-3B")
 
 # Initialize chat history
 if "messages" not in st.session_state:

@@ -2,10 +2,11 @@ import streamlit as st
 import random
 import time
 from huggingface_hub import InferenceClient
+import os
 
-
+HuggingFace_api=os.getenv('HuggingFace_Api_Token')
 def api(role,content):
-	client = InferenceClient(api_key="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")
+	client = InferenceClient(api_key=HuggingFace_api)
 	messages = [
 		{
 			"role": role,
